@@ -14,11 +14,12 @@ body {
 }
 
 .phone {
-  width: 480px;
-  height: 900px;
+  width: 400px;
+  height: 830px;
   border-radius: 10px;
   background-color: $bgColor;
   box-shadow: 5px 10px 10px rgba($color: #000000, $alpha: 0.5);
+  box-sizing: border-box;
 }
 
 .header {
@@ -27,6 +28,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: $grey;
+  border-radius: 10px;
 
   .header__title {
     text-transform: uppercase;
@@ -36,7 +38,7 @@ body {
 
 .total {
   background-color: $textColor;
-  padding: 30px 15px;
+  padding: 20px 15px;
   color: $bgColor;
   display: flex;
   flex-direction: column;
@@ -68,7 +70,7 @@ body {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       align-items: flex-start;
-      padding: 30px 15px;
+      padding: 20px 15px;
 
       .item__info-col {
         display: flex;
@@ -104,7 +106,7 @@ body {
   border-top: 4px solid $textColor;
   border-bottom: 4px solid $textColor;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 140px);
+  grid-template-columns: repeat(auto-fill, 120px);
 
   .spec {
     display: flex;

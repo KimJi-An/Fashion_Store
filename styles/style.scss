@@ -1,10 +1,52 @@
 @charset "UTF-8";
 @import "./reset.scss";
 
+$textColor: #1F1414;
+$bgColor: #DEE2E2;
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #BCBFBF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #BCBFBF;
+}
+
+.phone {
+  width: 480px;
+  height: 900px;
+  border-radius: 10px;
+  background-color: $bgColor;
+  box-shadow: 5px 10px 10px rgba($color: #000000, $alpha: 0.5);
+}
+
+.header {
+  padding: 50px 15px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header__title {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.total {
+  background-color: $textColor;
+  padding: 30px 15px;
+  color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: bold;
+  gap: 5px;
+
+  .total__price {
+    font-size: 22px;
+  }
+
+  .total__subtitle {
+    font-size: 14px;
+  }
 }

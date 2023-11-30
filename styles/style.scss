@@ -3,6 +3,7 @@
 
 $textColor: #1F1414;
 $bgColor: #DEE2E2;
+$grey: #C6CACA;
 
 body {
   display: flex;
@@ -25,6 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: $grey;
 
   .header__title {
     text-transform: uppercase;
@@ -49,4 +51,80 @@ body {
   .total__subtitle {
     font-size: 14px;
   }
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: $grey;
+
+  .item {
+    position: relative;
+    border-top: 4px solid $textColor;
+    background-color: $bgColor;
+
+    .item__info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: flex-start;
+      padding: 30px 15px;
+
+      .item__info-col {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        gap: 5px;
+
+        &:nth-child(2) {
+          align-items: flex-end;
+        }
+      }
+
+      .item__title {
+        font-size: 42px;
+      }
+
+      .item__subtitle {
+        font-size: 18px;
+      }
+
+      .item__total-price {
+        font-size: 32px;
+      }
+
+      .item__piece-price {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.item__specs {
+  border-top: 4px solid $textColor;
+  border-bottom: 4px solid $textColor;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 140px);
+
+  .spec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    font-weight: bold;
+
+    &:last-child {
+      border-left: 4px solid $textColor;
+    }
+  }
+}
+
+.item__photo {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  width: 35%;
+  height: 60%;
+  border: 4px solid $textColor;
+  object-fit: cover;
 }

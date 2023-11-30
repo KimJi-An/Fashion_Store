@@ -10,6 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  gap: 20px;
   background-color: #BCBFBF;
 }
 
@@ -19,7 +20,6 @@ body {
   border-radius: 10px;
   background-color: $bgColor;
   box-shadow: 5px 10px 10px rgba($color: #000000, $alpha: 0.5);
-  box-sizing: border-box;
 }
 
 .header {
